@@ -121,6 +121,7 @@ If you are running the project **locally (not in Docker)**, you'll need to set u
 
 ```
 DATABASE_URL=postgresql://postgres:password@localhost:5432/sportsbook
+PORT=8000
 ```
 
 Ensure that the PostgreSQL database is running and accessible at the specified URL.

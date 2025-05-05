@@ -1,6 +1,6 @@
 # 🎰 Online Betting Dashboard
 
-![Dashboard Preview]([https://via.placeholder.com/800x400?text=Betting+Dashboard+Preview](https://github.com/user-attachments/assets/f6b4672c-a745-48c4-8a57-897041cd3c25)) 
+![Image 05-05-2025 at 11 02](https://github.com/user-attachments/assets/cd85efe8-a09b-4177-8e0a-35f43695a79c)
 
 A full-stack betting platform with real-time odds tracking, built with modern web technologies and containerized for easy deployment.
 
@@ -143,11 +143,8 @@ This will run the tests and output the results in the terminal.
 ## Testing with Postman
 
 You can test the backend API using the Postman collection provided. Simply import the collection by downloading it directly from the link below:
-[download](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
 
-[Sportsbook_API_Collection.postman_collection.json](https://github.com/user-attachments/files/20034300/Sportsbook_API_Collection.postman_collection.json)
- )
-
+[Download Postman Collection](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
 
 Once imported into Postman, you can use the pre-configured requests to test the API endpoints (e.g., view betting events, create bets, etc.).
 

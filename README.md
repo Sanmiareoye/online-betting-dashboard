@@ -114,6 +114,22 @@ If you prefer to run the project locally without Docker, follow these steps:
      ```
 
 ---
+
+## Local Environment
+
+If you are running the project **locally (not in Docker)**, you'll need to set up a **PostgreSQL** database. You'll also need to configure the **`DATABASE_URL`** in the `.env` file. The URL format should look like:
+
+```
+DATABASE_URL=postgresql://postgres:password@localhost:5432/sportsbook
+```
+
+Ensure that the PostgreSQL database is running and accessible at the specified URL.
+
+### Apply migrations and seed test data
+```
+npx prisma migrate reset && npm run seed
+```
+---
 ---
 ## Running Tests
 
@@ -137,18 +153,6 @@ You can test the backend API using the Postman collection provided. Simply impor
 [Download Postman Collection](https://github.com/Sanmiareoye/online-betting-dashboard/blob/main/backend/Sportsbook_API_Collection.postman_collection.json)
 
 Once imported into Postman, you can use the pre-configured requests to test the API endpoints (e.g., view betting events, create bets, etc.).
-
----
-
-## Local Environment
-
-If you are running the project **locally (not in Docker)**, you'll need to set up a **PostgreSQL** database. You'll also need to configure the **`DATABASE_URL`** in the `.env` file. The URL format should look like:
-
-```
-DATABASE_URL=postgresql://postgres:password@localhost:5432/sportsbook
-```
-
-Ensure that the PostgreSQL database is running and accessible at the specified URL.
 
 ---
 

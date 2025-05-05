@@ -1,6 +1,6 @@
 # 🎰 Online Betting Dashboard
 
-This is a full-stack online betting dashboard built using **Node.js**, **PostgreSQL**, **Docker**, and **Prisma ORM**. The project includes a **backend API** and a **frontend interface** for users to interact with betting events, view odds, and place bets, built with modern web technologies and containerized for easy deployment.
+This is a full-stack online betting dashboard built using **Node.js**, **PostgreSQL**, **Docker**, and **Prisma ORM**. The project includes a **backend API** and a **frontend interface** for users to interact with betting events, view odds, and place bets, built with modern web technologies and containerised for easy deployment.
 
 ![Image 05-05-2025 at 11 02](https://github.com/user-attachments/assets/cd85efe8-a09b-4177-8e0a-35f43695a79c)
 

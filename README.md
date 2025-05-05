@@ -134,7 +134,7 @@ This will run the tests and output the results in the terminal.
 
 You can test the backend API using the Postman collection provided. Simply import the collection by downloading it directly from the link below:
 
-[Download Collection (Right-click → Save Link As)](https://github.com/Sanmiareoye/online-betting-dashboard/blob/main/backend/Sportsbook_API_Collection.postman_collection.json)
+[Download Postman Collection](https://github.com/Sanmiareoye/online-betting-dashboard/blob/main/backend/Sportsbook_API_Collection.postman_collection.json)
 
 Once imported into Postman, you can use the pre-configured requests to test the API endpoints (e.g., view betting events, create bets, etc.).
 

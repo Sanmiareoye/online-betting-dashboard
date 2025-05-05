@@ -1,46 +1,51 @@
-Here’s the full README content formatted for Markdown (`.md`) so you can directly copy and paste it into your `README.md` file:
+# 🎰 Online Betting Dashboard
 
-````markdown
-# Online Betting Dashboard
+![Dashboard Preview](https://via.placeholder.com/800x400?text=Betting+Dashboard+Preview) *(replace with actual screenshot)*
 
-This is a full-stack online betting dashboard built using **Node.js**, **PostgreSQL**, **Docker**, and **Prisma ORM**. The project includes a **backend API** and a **frontend interface** for users to interact with betting events, view odds, and place bets.
+A full-stack betting platform with real-time odds tracking, built with modern web technologies and containerized for easy deployment.
 
----
+## ✨ Features
 
-## Table of Contents
+| Feature | Description |
+|---------|-------------|
+| **Event Management** | Create, view, update betting events with dynamic odds |
+| **Bet Placement** | User-friendly interface for placing wagers |
+| **Real-time Updates** | Live odds and event status tracking |
+| **Secure Transactions** | PostgreSQL-backed data integrity |
+| **Containerized** | Dockerized for consistent environments |
 
-1. [Features](#features)
-2. [Tech Stack](#tech-stack)
-3. [Getting Started](#getting-started)
-4. [Running the Project](#running-the-project)
-5. [Running Tests](#running-tests)
-6. [Testing with Postman](#testing-with-postman)
-7. [Local Environment](#local-environment)
-8. [Docker Setup](#docker-setup)
-9. [Contributing](#contributing)
-10. [License](#license)
+## 🛠 Tech Stack
 
----
+**Frontend**  
+[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-4-orange?logo=vite)](https://vitejs.dev/)
 
-## Features
+**Backend**  
+[![Node.js](https://img.shields.io/badge/Node.js-20-green?logo=nodedotjs)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-4-lightgrey)](https://expressjs.com/)
 
-- Manage betting events with the ability to view, create, and update events.
-- PostgreSQL database for storing betting event data.
-- User-friendly interface for placing bets and tracking event outcomes.
-- Real-time updates for odds and event statuses.
-- Dockerized application for easy setup and deployment.
+**Database**  
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue?logo=postgresql)](https://www.postgresql.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-5-darkblue?logo=prisma)](https://www.prisma.io/)
 
----
+**Infrastructure**  
+[![Docker](https://img.shields.io/badge/Docker-24-blue?logo=docker)](https://www.docker.com/)
+[![Docker Compose](https://img.shields.io/badge/Compose-2-blue)](https://docs.docker.com/compose/)
 
-## Tech Stack
+## 🚀 Getting Started
 
-- **Frontend**: React, Vite
-- **Backend**: Node.js, Express.js
-- **Database**: PostgreSQL, Prisma ORM
-- **Containerization**: Docker, Docker Compose
-- **Testing**: Vitest for unit and integration testing
+### Prerequisites
 
----
+- [Docker](https://docs.docker.com/get-docker/) (v24+ recommended)
+- [Docker Compose](https://docs.docker.com/compose/install/) (v2+)
+- [Node.js](https://nodejs.org/) (v20+) *optional for local dev*
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/online-betting-dashboard.git
+   cd online-betting-dashboard
 
 ## Getting Started
 

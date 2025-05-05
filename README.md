@@ -127,6 +127,8 @@ PORT=8000
 Ensure that the PostgreSQL database is running and accessible at the specified URL.
 
 ### Apply migrations and seed test data
+
+This will seed the database with 5 samples.
 ```
 npx prisma migrate reset && npm run seed
 ```

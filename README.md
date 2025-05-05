@@ -1,37 +1,45 @@
 # 🎰 Online Betting Dashboard
 
+This is a full-stack online betting dashboard built using **Node.js**, **PostgreSQL**, **Docker**, and **Prisma ORM**. The project includes a **backend API** and a **frontend interface** for users to interact with betting events, view odds, and place bets, built with modern web technologies and containerized for easy deployment.
+
 ![Image 05-05-2025 at 11 02](https://github.com/user-attachments/assets/cd85efe8-a09b-4177-8e0a-35f43695a79c)
 
-A full-stack betting platform with real-time odds tracking, built with modern web technologies and containerized for easy deployment.
+---
+
+## Table of Contents
+
+1. [Features](#features)
+2. [Tech Stack](#tech-stack)
+3. [Getting Started](#getting-started)
+4. [Running the Project](#running-the-project)
+5. [Running Tests](#running-tests)
+6. [Testing with Postman](#testing-with-postman)
+7. [Local Environment](#local-environment)
+8. [Docker Setup](#docker-setup)
+9. [Contributing](#contributing)
+10. [License](#license)
+
+---
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| **Event Management** | Create, view, update betting events with dynamic odds |
-| **Bet Placement** | User-friendly interface for placing wagers |
-| **Real-time Updates** | Live odds and event status tracking |
-| **Secure Transactions** | PostgreSQL-backed data integrity |
-| **Containerized** | Dockerized for consistent environments |
+- Manage betting events with the ability to view, create, and update events.
+- PostgreSQL database for storing betting event data.
+- User-friendly interface for placing bets and tracking event outcomes.
+- Real-time updates for odds and event statuses.
+- Dockerized application for easy setup and deployment.
+
+---
 
 ## 🛠 Tech Stack
 
-**Frontend**  
-[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-4-orange?logo=vite)](https://vitejs.dev/)
-
-**Backend**  
-[![Node.js](https://img.shields.io/badge/Node.js-20-green?logo=nodedotjs)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express-4-lightgrey)](https://expressjs.com/)
-
-**Database**  
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue?logo=postgresql)](https://www.postgresql.org/)
-[![Prisma](https://img.shields.io/badge/Prisma-5-darkblue?logo=prisma)](https://www.prisma.io/)
-
-**Infrastructure**  
-[![Docker](https://img.shields.io/badge/Docker-24-blue?logo=docker)](https://www.docker.com/)
-[![Docker Compose](https://img.shields.io/badge/Compose-2-blue)](https://docs.docker.com/compose/)
-
+- **Frontend**: React, Vite
+- **Backend**: Node.js, Express.js
+- **Database**: PostgreSQL, Prisma ORM
+- **Containerization**: Docker, Docker Compose
+- **Testing**: Vitest for unit and integration testing
+  
+---
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -108,7 +116,7 @@ If you prefer to run the project locally without Docker, follow these steps:
      ```
 
 ---
-
+---
 ## Running Tests
 
 ### Running Unit Tests

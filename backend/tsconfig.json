@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["ES2022", "ESNext.AsyncIterable"],
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "types": ["jest", "node"],
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "include": ["prisma", "src/**/*", "src/tests"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

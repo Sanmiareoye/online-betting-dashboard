@@ -1,0 +1,193 @@
+{
+  "info": {
+    "_postman_id": "f7c4c2c9-3ddf-4eb2-b1f4-1e7a3cd9c3e4",
+    "name": "Sportsbook API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/events",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["events"]
+        }
+      }
+    },
+    {
+      "name": "Get Event by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/events/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["events", "1"]
+        },
+        "description": "Example response for event ID 1:\n\n{\n  \"event_id\": 1,\n  \"event_name\": \"NFL: Chiefs vs Eagles\",\n  \"odds\": 1.75,\n  \"createdAt\": \"2025-05-05T07:24:44.231Z\",\n  \"bets\": [\n    {\n      \"id\": 1,\n      \"amount\": 900,\n      \"playerName\": \"Sanmi\",\n      \"potentialWin\": 1575,\n      \"eventId\": 1,\n      \"createdAt\": \"2025-05-05T07:28:12.467Z\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "name": "Create Event",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event_name\": \"NBA: Celtics vs Heat\",\n  \"odds\": 1.8\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/events",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["events"]
+        },
+        "description": "Example request body for creating a new event"
+      }
+    },
+    {
+      "name": "Update Event",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"event_name\": \"NFL: Chiefs vs Eagles (Updated)\",\n  \"odds\": 1.8\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/events/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["events", "1"]
+        },
+        "description": "Example request body for updating event ID 1"
+      }
+    },
+    {
+      "name": "Delete Event",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/events/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["events", "1"]
+        },
+        "description": "Example response for successful deletion:\n\n{\n  \"message\": \"Event with ID 1 deleted successfully\"\n}"
+      }
+    },
+    {
+      "name": "Get All Bets",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/bets",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["bets"]
+        }
+      }
+    },
+    {
+      "name": "Get Bet by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/bets/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["bets", "1"]
+        },
+        "description": "Example response for bet ID 1:\n\n{\n  \"id\": 1,\n  \"amount\": 900,\n  \"playerName\": \"Sanmi\",\n  \"potentialWin\": 1575,\n  \"eventId\": 1,\n  \"createdAt\": \"2025-05-05T07:28:12.467Z\"\n}"
+      }
+    },
+    {
+      "name": "Create Bet",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"amount\": 200,\n  \"playerName\": \"John\",\n  \"eventId\": 2\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/bets",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["bets"]
+        },
+        "description": "Example request body for creating a new bet on event ID 2 (EPL: Arsenal vs Chelsea)"
+      }
+    },
+    {
+      "name": "Update Bet",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"amount\": 1000,\n  \"playerName\": \"Sanmi Updated\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/bets/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["bets", "1"]
+        },
+        "description": "Example request body for updating bet ID 1"
+      }
+    },
+    {
+      "name": "Delete Bet",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/bets/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["bets", "1"]
+        },
+        "description": "Example response for successful deletion:\n\n{\n  \"message\": \"Bet with ID 1 deleted successfully\"\n}"
+      }
+    }
+  ]
+}

@@ -16,12 +16,10 @@ This is a full-stack online betting dashboard built using **Node.js**, **Postgre
 6. [Testing with Postman](#testing-with-postman)
 7. [Local Environment](#local-environment)
 8. [Docker Setup](#docker-setup)
-9. [Contributing](#contributing)
-10. [License](#license)
 
 ---
 
-## ✨ Features
+## Features
 
 - Manage betting events with the ability to view, create, and update events.
 - PostgreSQL database for storing betting event data.
@@ -31,7 +29,7 @@ This is a full-stack online betting dashboard built using **Node.js**, **Postgre
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Frontend**: React, Vite
 - **Backend**: Node.js, Express.js
@@ -40,7 +38,7 @@ This is a full-stack online betting dashboard built using **Node.js**, **Postgre
 - **Testing**: Vitest for unit and integration testing
   
 ---
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -181,6 +179,4 @@ docker-compose down
 ```
 
 ---
-
-```
 

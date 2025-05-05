@@ -36,21 +36,6 @@ A full-stack betting platform with real-time odds tracking, built with modern we
 
 ### Prerequisites
 
-- [Docker](https://docs.docker.com/get-docker/) (v24+ recommended)
-- [Docker Compose](https://docs.docker.com/compose/install/) (v2+)
-- [Node.js](https://nodejs.org/) (v20+) *optional for local dev*
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/online-betting-dashboard.git
-   cd online-betting-dashboard
-
-## Getting Started
-
-### Prerequisites
-
 - Docker
 - Docker Compose
 - PostgreSQL (if running locally instead of Docker)
@@ -61,7 +46,6 @@ A full-stack betting platform with real-time odds tracking, built with modern we
 git clone https://github.com/yourusername/online-betting-dashboard.git
 cd online-betting-dashboard
 ````
-
 ---
 
 ## Running the Project
@@ -187,22 +171,6 @@ To stop the Docker containers:
 ```bash
 docker-compose down
 ```
-
----
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Make your changes and commit them (`git commit -am 'Add new feature'`).
-4. Push to your branch (`git push origin feature-name`).
-5. Open a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 

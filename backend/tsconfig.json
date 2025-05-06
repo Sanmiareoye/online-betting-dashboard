@@ -14,7 +14,7 @@
     "noImplicitAny": true,
     "sourceMap": true,
     "resolveJsonModule": true,
-    "types": ["jest", "node"],
+    "types": ["node"],
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"]

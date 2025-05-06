@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
-          <FaUsersBetweenLines />
+          <FaUsersBetweenLines className="" />
           <span>Online Betting Dashboard</span>
         </Link>
 

@@ -9,6 +9,7 @@ services:
       - DATABASE_URL=postgresql://postgres:password@db:5432/sportsbook
     depends_on:
       - db
+    command: sh -c "npx prisma migrate deploy && npm run seed && npm run dev"
     networks:
       - app-network
 

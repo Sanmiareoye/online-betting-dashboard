@@ -4,11 +4,27 @@ const prisma = new PrismaClient();
 async function main() {
   await prisma.sportEvent.createMany({
     data: [
-      { event_name: "Soccer: Team A vs Team B", odds: 1.75 },
-      { event_name: "Basketball: Team C vs Team D", odds: 2.1 },
-      { event_name: "Tennis: Player E vs Player F", odds: 1.95 },
-      { event_name: "MMA: Fighter G vs Fighter H", odds: 1.6 },
-      { event_name: "Baseball: Team I vs Team J", odds: 2.25 },
+      {
+        event_name: "🏈 NFL: Chiefs vs Eagles",
+        odds: 1.8,
+      },
+      {
+        event_name: "⚽️ EPL: Arsenal vs Chelsea",
+        odds: 2.1,
+      },
+      {
+        event_name: "🎾 Tennis: Djokovic vs Alcaraz",
+        odds: 1.9,
+      },
+
+      {
+        event_name: "🏀 NBA: Lakers vs Clippers",
+        odds: 1.85,
+      },
+      {
+        event_name: "⚽️ UCL: Real Madrid vs Bayern",
+        odds: 1.95,
+      },
     ],
   });
 }

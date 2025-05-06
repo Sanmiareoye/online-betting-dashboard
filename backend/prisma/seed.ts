@@ -2,6 +2,7 @@ import { PrismaClient } from "@prisma/client/client";
 const prisma = new PrismaClient();
 
 async function main() {
+  await prisma.sportEvent.deleteMany();
   await prisma.sportEvent.createMany({
     data: [
       {

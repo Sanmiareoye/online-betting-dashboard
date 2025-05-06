@@ -58,6 +58,12 @@ cd online-betting-dashboard
 
 ### Using Docker Compose
 
+You'll need to configure the **`DATABASE_URL`** in the `.env` file. The URL format should look like:
+
+```
+DATABASE_URL=postgresql://postgres:password@localhost:5432/sportsbook // This one is the default one I used, so I'm sure you can just copy it.
+PORT=8000
+```
 The easiest way to run both the frontend and backend with Docker is to use the following command:
 
 ```bash
@@ -117,12 +123,7 @@ If you prefer to run the project locally without Docker, follow these steps:
 
 ## Local Environment
 
-If you are running the project **locally (not in Docker)**, you'll need to set up a **PostgreSQL** database. You'll also need to configure the **`DATABASE_URL`** in the `.env` file. The URL format should look like:
-
-```
-DATABASE_URL=postgresql://postgres:password@localhost:5432/sportsbook
-PORT=8000
-```
+If you are running the project **locally (not in Docker)**, you'll need to set up a **PostgreSQL** database. 
 
 Ensure that the PostgreSQL database is running and accessible at the specified URL.
 

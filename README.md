@@ -61,9 +61,10 @@ cd online-betting-dashboard
 You'll need to configure the **`DATABASE_URL`** in the `.env` file. The URL format should look like:
 
 ```
-DATABASE_URL=postgresql://postgres:password@localhost:5432/sportsbook // This one is the default one I used, so I'm sure you can just copy it.
+DATABASE_URL=postgresql://postgres:password@localhost:5432/sportsbook
 PORT=8000
 ```
+This one is the default one I used, so my env file looked exactly like above.
 The easiest way to run both the frontend and backend with Docker is to use the following command:
 
 ```bash

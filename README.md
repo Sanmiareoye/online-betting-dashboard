@@ -91,13 +91,21 @@ docker-compose up
 ### Running the Project Locally (without Docker)
 
 If you prefer to run the project locally without Docker, follow these steps:
+l## Local Environment
+
+If you are running the project **locally (not in Docker)**, you'll need to set up a **PostgreSQL** database. 
+
+Ensure that the PostgreSQL database is running and accessible at the specified URL.
 
 1. **Backend**:
 
    * Navigate to the `backend` directory and install dependencies:
 
      ```bash
+     cd backend
      npm install
+     npx prisma migrate dev --name init
+     npx prisma db seed
      ```
 
    * Run the server:
@@ -111,6 +119,7 @@ If you prefer to run the project locally without Docker, follow these steps:
    * Navigate to the `frontend` directory and install dependencies:
 
      ```bash
+     cd frontend
      npm install
      ```
 
@@ -119,22 +128,6 @@ If you prefer to run the project locally without Docker, follow these steps:
      ```bash
      npm run dev
      ```
-
----
-
-## Local Environment
-
-If you are running the project **locally (not in Docker)**, you'll need to set up a **PostgreSQL** database. 
-
-Ensure that the PostgreSQL database is running and accessible at the specified URL.
-
-### Apply migrations and seed test data
-
-This will seed the database with 5 samples.
-```
-npx prisma migrate reset && npm run seed
-```
----
 ---
 ## Running Tests
 

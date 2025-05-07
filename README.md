@@ -14,8 +14,7 @@ This is a full-stack online betting dashboard built using **Node.js**, **Postgre
 4. [Running the Project](#running-the-project)
 5. [Running Tests](#running-tests)
 6. [Testing with Postman](#testing-with-postman)
-7. [Local Environment](#local-environment)
-8. [Docker Setup](#docker-setup)
+7. [Docker Setup](#docker-setup)
 
 ---
 
@@ -92,7 +91,6 @@ docker-compose up
 ### Running the Project Locally (without Docker)
 
 If you prefer to run the project locally without Docker, follow these steps:
-l## Local Environment
 
 Ensure that the PostgreSQL database is running and accessible at the specified URL and your database URL is accessible via the .env file like shown above, I used postgres.app to run it locally on my computer.
 

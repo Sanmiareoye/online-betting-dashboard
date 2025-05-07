@@ -94,7 +94,7 @@ docker-compose up
 If you prefer to run the project locally without Docker, follow these steps:
 l## Local Environment
 
-Ensure that the PostgreSQL database is running and accessible at the specified URL and your database url is accessible via the .env file like shown above, I used postgre.app to run it locally on my computer.
+Ensure that the PostgreSQL database is running and accessible at the specified URL and your database URL is accessible via the .env file like shown above, I used postgres.app to run it locally on my computer.
 
 1. **Backend**:
 
